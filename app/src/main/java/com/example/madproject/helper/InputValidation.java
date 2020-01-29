@@ -9,8 +9,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 
-import java.util.regex.Pattern;
-
 public class InputValidation {
 
     private Context context;
@@ -70,6 +68,7 @@ public class InputValidation {
     public boolean isEmailValid(EditText txtEditText, String message){
         String value = txtEditText.getText().toString().trim();
         if(value.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(value).matches()){
+            txtEditText.setError(message);
             hideKeyboardFrom(txtEditText);
             return false;
         }

@@ -51,11 +51,11 @@ public class SignUpActivity extends AppCompatActivity {
             return;
         }
 
-        if(!inputValidation.isEmailValid(txtEmail, getString(R.string.error_message))){
+        if(!inputValidation.isEmailValid(txtEmail, getString(R.string.error_message_email))){
             return;
         }
 
-        if(!inputValidation.isPasswordMatches(txtPassword, txtConfirm, getString(R.string.error_message))){
+        if(!inputValidation.isPasswordMatches(txtPassword, txtConfirm, getString(R.string.error_message_password))){
             return;
         }
 

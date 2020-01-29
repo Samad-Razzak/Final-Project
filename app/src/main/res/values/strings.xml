@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Recipes</string>
-    <string name="error_message">Input is invalid</string>
+    <string name="error_message">Field is required</string>
+    <string name="error_message_email">Email is invalid</string>
+    <string name="error_message_password">Password is not matching</string>
     <string name="search_your_recipes">Search Your Recipes…</string>
     <string name="meal_categories">Meal Categories</string>
     <string name="dot_loading">...</string>
